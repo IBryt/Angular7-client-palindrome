@@ -1,3 +1,6 @@
+## Reference on backend
+ [reference](https://github.com/IBryt/SpringRest-serv-palindrome) 
+
 # ClientPalindrome
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
