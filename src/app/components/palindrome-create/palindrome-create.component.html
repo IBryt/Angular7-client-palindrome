@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Find your palindrome</h5>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="value">Palindrome</label>
+        <input type="text"
+               class="form-control"
+               (keypress)="allowNumbersOnly($event)"
+               id="value"
+               [(ngModel)]="palindrome.value"
+               name="value">
+      </div>
+      <button class="btn btn-primary">Find</button>
+    </form>
+  </div>
+</div>
