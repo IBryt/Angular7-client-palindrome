@@ -1,14 +1,16 @@
 <div class="card">
-  <div class="card-body" *ngIf="palindromes.length">
+  <div class="card-body">
     <h5 class="card-title">History</h5>
-    <ul class="list-group">
+    <ul class="list-group" *ngIf="palindromes.length">
       <app-palindrome-item *ngFor="let palindrome of palindromes; trackBy: identify"
-                          [palindrome]="palindrome">
+                           [palindrome]="palindrome">
       </app-palindrome-item>
     </ul>
-  </div>
-  <div class="card-body" *ngIf="!palindromes.length">
-    <h5 class="card-title">empty list</h5>
+    <ul class="list-group" *ngIf="!palindromes.length">
+      <li class="list-group-item">
+        empty list
+      </li>
+    </ul>
   </div>
 </div>
 

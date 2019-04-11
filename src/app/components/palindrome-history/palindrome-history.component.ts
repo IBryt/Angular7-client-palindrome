@@ -8,7 +8,7 @@ import {Palindrome} from '../../model/palindrome';
   styleUrls: ['./palindrome-history.component.css']
 })
 export class PalindromeHistoryComponent implements OnInit {
-  palindromes: Palindrome[];
+  palindromes: Palindrome[] = [];
   constructor(
     private server: PalindromeService
   ) { }
